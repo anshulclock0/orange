@@ -78,7 +78,7 @@ def MakeMove(board):
                   print usednames
       
               else:
-                  i = i-1  
+                  
                   i = options[0]   
                   print 'Try again bae: already used name '
                  
