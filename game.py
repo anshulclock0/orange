@@ -68,6 +68,9 @@ def MakeMove(board):
         
        
            i = makealist(n)
+           if i == 9:
+                 print 'game over ' +str(whogoesfirst())+ ' wins'
+                 break
            print i
            if i not in used:
               if name not in usednames:
