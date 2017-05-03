@@ -3,7 +3,7 @@ board = [' '] * 10
  
 
 Griffindor = ' rupert john ginny harry ron george hermione fred sirius lucas malfoy edward'.split()
-slytherin = ' malfoy mccoghnouy bity betty fool and play'.split()
+slytherin = '  mccoghnouy bity betty fool and play'.split()
 playerhouse = []
 used = []
 usednames = []
@@ -28,23 +28,24 @@ def drawBoard(board):
       print('   |   |')
 
 def getplayer():
-    playaa = raw_input("What is your house?: 1-grif and 2-sliterin: ")
+    playaa = raw_input("What is your house?: 1-Griffindor and anything to be a crappy  SLitherin: ")
     global playerhouse 
     if playaa == '1':
         playerhouse = Griffindor
-        print playerhouse
-    else:
+        #print playerhouse
+    else :
         
         playerhouse = slytherin
-        print playerhouse
+        #print playerhouse
+    
     
 
 def whogoesfirst():
     if   set(playerhouse)== set(Griffindor):
-        return 'Griffiny you are on '
+        return 'Griffindor you are on '
     
-    else:
-        return 'SLith is on'
+    elif set(playerhouse)== set(slytherin) :
+        return 'SLitherin is on'
 
 def makealist(n):
       global options 
@@ -69,16 +70,16 @@ def MakeMove(board):
        
            i = makealist(n)
            if i == 9:
-                 print 'game over ' +str(whogoesfirst())+ ' wins'
+                 print 'game over ' +str(whogoesfirst())+ ' wins YAYAYYYAYYAYAY'
                  break
-           print i
+           #print i
            if i not in used:
               if name not in usednames:
                   board[i] = name
                   used.append(i)
                   usednames.append(name)
-                  print used
-                  print usednames
+                  #print used
+                  #print usednames
       
               else:
                   
@@ -90,11 +91,11 @@ def MakeMove(board):
               drawBoard(board)
 
           else:
-             print 'whoops, check this out'
+             print 'Whoops, check this out, the turns have tabled'
              playerhouse1 = Griffindor + slytherin  
              playerhouse1 =  [x for x in playerhouse1 if x not in playerhouse]
              playerhouse = playerhouse1
-             print playerhouse
+             #print playerhouse
 
 
              continue 
@@ -112,4 +113,3 @@ while True:
 
 
 #drawBoard(board)
-    
