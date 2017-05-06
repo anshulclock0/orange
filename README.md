@@ -1,4 +1,4 @@
-# orange
+# Matrix Name Game 
 Writers: The project was written as a collective effort by Anshul Rai Sharma and Ayush Lahiri
 
 System requirments
