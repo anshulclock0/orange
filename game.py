@@ -2,8 +2,8 @@ import random
 board = [' '] * 10
  
 
-Griffindor = ' rupert john ginny harry ron george hermione fred sirius lucas malfoy edward'.split()
-slytherin = '  mccoghnouy bity betty fool and play'.split()
+Griffindor = ' rupert john ginny harry ron george hermione fred sirius lucas  edward'.split()
+slytherin = '  malfoy Voldemor, Severus Snape, Bellatrix Lestrange Draco Malfoy Horace Slughorn'.split()
 playerhouse = []
 used = []
 usednames = []
